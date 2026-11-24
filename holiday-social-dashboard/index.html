@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holiday Beverages – Social Media Presence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0}
+.hb{--red:#ED1D24;--yel:#FFD32B;--cream:#F8F7F4;--berry:#AE4268;--org:#F58236;--teal:#49AE98;--grn:#007E42;--ink:#2B1A14;--char:#373E48;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--cream);line-height:1.5;overflow:hidden}
+.hb *{box-sizing:border-box}
+.hb h1,.hb h2,.hb h3,.hb .hb-big,.hb .hb-stat b{font-family:'Poetsen One','Baloo 2','Fredoka','Arial Rounded MT Bold','Trebuchet MS',system-ui,sans-serif;font-weight:800;letter-spacing:.01em}
+.hb-wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.hb-hero{background:radial-gradient(ellipse at 50% 38%,#d6397a 0,#b02668 45%,#8a1c58 100%);color:#fff;position:relative;overflow:hidden;padding:18px 0 120px;text-align:center}
+.hb-mark{position:absolute;left:50%;top:34%;transform:translate(-50%,-50%);font-family:'Brush Script MT','Segoe Script','Snell Roundhand','Lucida Handwriting',cursive;font-style:italic;font-weight:800;font-size:clamp(100px,25vw,330px);line-height:1;color:rgba(255,255,255,.1);pointer-events:none;white-space:nowrap}
+.hb-nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1180px;margin:0 auto;padding:6px 16px}
+.hb-nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;background:rgba(255,255,255,.2);border-radius:99px;padding:6px 16px}
+.hb-nav .links{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.hb-ic{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#fff;margin-left:6px}
+.hb-nav .ics{display:flex}
+.hb-stage{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:0 8px}
+.hb-heroimg{display:block;width:100%;height:auto;filter:drop-shadow(0 20px 26px rgba(40,0,20,.4))}
+.hb-hero h1{position:relative;z-index:3;color:#fff;font-size:clamp(28px,6vw,54px);margin:6px 0 8px;line-height:1.08;text-shadow:0 3px 0 rgba(120,0,50,.35)}
+.hb-lede{position:relative;z-index:3;max-width:760px;margin:0 auto;padding:0 16px;color:#ffe9f1;font-size:clamp(14px,2.4vw,17px);font-weight:600}
+.hb-lede b{color:var(--yel)}
+.hb-ticker{background:var(--yel);color:var(--red);overflow:hidden;white-space:nowrap;padding:10px 0;margin:-30px 0 0;transform:rotate(-1.4deg) scale(1.04);position:relative;z-index:4;box-shadow:0 6px 16px rgba(120,60,20,.2)}
+.hb-tk{display:inline-block;white-space:nowrap}
+.hb-tk span{display:inline-block;font-family:'Poetsen One','Baloo 2','Arial Rounded MT Bold',sans-serif;font-weight:800;font-size:clamp(22px,4vw,34px);letter-spacing:.02em}
+@media (prefers-reduced-motion:no-preference){.hb-tk{animation:hbtick 40s linear infinite}@keyframes hbtick{from{transform:translateX(0)}to{transform:translateX(-50%)}}}
+.hb a.hb-ic,.hb-nav a.hb-ic{display:inline-grid;place-items:center;width:38px;height:38px;padding:0;border-radius:50%;background:#fff;text-decoration:none;transition:transform .15s}
+.hb a.hb-ic:hover{transform:scale(1.1)}
+.hb a.hb-ic:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.hb-ph{animation:hbbob 6s ease-in-out infinite}.hb-ph:nth-child(2){animation-delay:-1.5s}.hb-ph:nth-child(3){animation-delay:-3s}.hb-ph:nth-child(4){animation-delay:-4.5s}@keyframes hbbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}}
+.hb-dd{margin-top:6px}
+.hb-dd summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;color:var(--red);font-family:'Poetsen One','Arial Rounded MT Bold',sans-serif;font-weight:800;font-size:18px;border-radius:99px;padding:14px 24px;box-shadow:0 6px 18px rgba(120,60,20,.15);margin-bottom:14px}
+.hb-dd summary::-webkit-details-marker{display:none}
+.hb-dd summary::after{content:"";width:10px;height:10px;border-right:3px solid var(--red);border-bottom:3px solid var(--red);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.hb-dd[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+.hb-dd summary:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hb-post{position:relative;overflow:hidden}
+.hb-post .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38;transition:opacity .45s ease}
+.hb-post:hover .bg,.hb-post:focus .bg{opacity:0}
+.hb-post>*:not(.bg){position:relative;z-index:1;text-shadow:0 1px 8px rgba(40,0,10,.45)}
+.hb-post:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hb-tilerow{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.hb-tilerow>.hb-tile{flex:1 1 240px;max-width:272px}
+.hb-lead{font-family:'Poetsen One','Baloo 2','Arial Rounded MT Bold',sans-serif;font-weight:800;color:#fff;font-size:clamp(17px,3vw,24px);line-height:1.3;max-width:820px;margin:0 auto 12px}
+.hb-band{border-radius:28px;padding:28px 24px;margin:26px auto 0;text-align:center;display:flex;flex-direction:column;gap:6px;position:relative;z-index:1;box-shadow:0 10px 26px rgba(120,60,20,.2)}
+.hb-band b{font-family:'Poetsen One','Baloo 2','Arial Rounded MT Bold',sans-serif;font-weight:800;font-size:clamp(26px,5vw,46px);line-height:1.1}
+.hb-band span{font-family:'Poetsen One','Baloo 2','Arial Rounded MT Bold',sans-serif;font-size:clamp(16px,2.6vw,24px);line-height:1.25}
+.hb-band-red{background:var(--red);color:var(--yel)}
+.hb-band-red span{color:#fff}
+.hb-band-pink{background:linear-gradient(135deg,#d6397a,#8a1c58);color:#fff;margin:0 auto 26px}
+.hb-band-pink b{color:var(--yel)}
+.hb-callout{max-width:760px;margin:-6px auto 18px;text-align:center;background:var(--yel);color:#5a1a00;border-radius:99px;padding:10px 22px;font-weight:800;font-size:14px}
+.hb-callout b{color:var(--red);font-size:16px}
+.hb-wave{background:var(--a);line-height:0}
+.hb-wave svg{display:block;width:100%;height:56px}
+.hb-sec{padding:30px 0 34px;position:relative}
+.hb-cream{background:var(--cream)}
+.hb-yellow{background:var(--yel)}
+.hb-sand{background:linear-gradient(#cfeef0,#f4e4c4 55%,var(--cream))}
+.hb-white{background:#fff}
+.hb-sec h2{color:var(--red);font-size:clamp(24px,4.4vw,36px);margin:0 0 4px;text-align:center;line-height:1.15}
+.hb-sec .hb-sub{margin:0 auto 20px;text-align:center;max-width:620px;color:#6b4a3a;font-size:14px}
+.hb-yellow h2{color:var(--red)}
+.hb-yellow .hb-sub{color:#6a3a00}
+.hb-grid2{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.hb-palm{position:absolute;bottom:0;width:clamp(90px,16vw,210px);opacity:.95;pointer-events:none}
+.hb-palm.l{left:-18px;transform:rotate(-6deg)}
+.hb-palm.r{right:-18px;transform:scaleX(-1) rotate(-6deg)}
+.hb-tile{background:#fff;border-radius:22px;padding:16px 18px;box-shadow:0 6px 18px rgba(120,60,20,.12);display:flex;flex-direction:column;border-bottom:6px solid var(--c);position:relative;z-index:1}
+.hb-red{--c:var(--red)}.hb-berry{--c:var(--berry)}.hb-orange{--c:var(--org)}.hb-teal{--c:var(--teal)}.hb-green{--c:var(--grn)}
+.hb-tl{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#7a5a4a}
+.hb-big{font-size:clamp(28px,4.5vw,40px);color:var(--c,var(--red));line-height:1.15;font-variant-numeric:tabular-nums}
+.hb-ts{font-size:12.5px;color:#7a5a4a}
+.hb-card{background:#fff;border-radius:22px;padding:18px 20px;box-shadow:0 6px 18px rgba(120,60,20,.12);border-top:7px solid var(--ct,var(--red));position:relative;z-index:1}
+.hb-top-orange{--ct:var(--org)}.hb-top-berry{--ct:var(--berry)}.hb-top-red{--ct:var(--red)}.hb-top-char{--ct:var(--char)}.hb-top-green{--ct:var(--grn)}
+.hb-card h3{margin:0 0 10px;font-size:20px;color:var(--ct,var(--red))}
+.hb-stats{display:grid;gap:8px 14px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.hb-stat{display:flex;flex-direction:column}
+.hb-stat span{font-size:12px;color:#7a5a4a;font-weight:700}
+.hb-stat b{font-size:22px;font-variant-numeric:tabular-nums}
+.hb-cardrow{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.hb-cardrow>.hb-card{flex:1 1 300px;max-width:380px}
+.hb-note{margin:12px 0 0;font-size:12px;color:#7a5a4a}
+.hb-cans{display:flex;justify-content:center;align-items:flex-end;gap:clamp(8px,3vw,36px);margin:0 auto 22px;position:relative;z-index:1}
+.hb-cans .hb-can{width:clamp(70px,16vw,130px);height:auto;filter:drop-shadow(0 12px 14px rgba(80,50,10,.35))}
+.hb-cans .hb-can:nth-child(2){margin-bottom:14px}
+.hb-panel{background:#fff;border-radius:22px;padding:18px 20px;box-shadow:0 6px 18px rgba(120,60,20,.12);min-width:0}
+.hb-panel h3{margin:0 0 6px;font-size:18px;color:var(--ink)}
+.hb-panel p{margin:0 0 10px;font-size:13px;color:#6b4a3a}
+.hb-chart{position:relative;min-height:120px;width:100%}
+.hb-chart svg{display:block;width:100%;height:auto}
+.hb-ax{font-size:12px;fill:#6b4a3a;font-family:inherit}
+.hb-val{font-size:12px;font-weight:800;fill:var(--ink);font-family:inherit}
+.hb-tip{position:absolute;display:none;pointer-events:none;background:#2B1A14;color:#fff;border-radius:10px;padding:6px 10px;font-size:12px;max-width:260px;z-index:5;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.hb-lift{background:#fff;border-radius:22px;padding:16px 20px;box-shadow:0 6px 18px rgba(120,60,20,.12);border-top:7px solid var(--ct);display:flex;flex-direction:column;--c:var(--ct)}
+.hb-inl b{font-size:inherit;font-family:inherit;color:var(--ink)}
+.hb-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;font-weight:700;margin-bottom:6px}
+.hb-legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.hb-quote{text-align:center;padding:46px 16px 10px}
+.hb-quote h2{color:var(--grn);font-size:clamp(30px,6vw,60px);max-width:900px;margin:0 auto 26px;line-height:1.1}
+.hb-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start;max-width:1180px;margin:0 auto;padding:0 16px 40px}
+.hb-ph{border-radius:22px;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;color:#fff;position:relative;overflow:hidden;text-align:left;background:linear-gradient(150deg,#FFB347,#d6397a)}
+.hb-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hb-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(40,10,0,.65))}
+.hb-ph b,.hb-ph small{position:relative;z-index:1}
+.hb-ph:nth-child(even){margin-top:34px}
+.hb-ph b{font-family:'Poetsen One','Arial Rounded MT Bold',sans-serif;font-size:clamp(14px,2.2vw,20px)}
+.hb-ph small{opacity:.9;font-size:12px}
+@media(max-width:640px){.hb-photos{grid-template-columns:repeat(2,1fr)}}
+.hb-feed{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:22px}
+.hb-post{border-radius:22px;aspect-ratio:1/1;padding:16px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 6px 18px rgba(120,60,20,.15)}
+.hb-post .pl{align-self:flex-start;background:rgba(255,255,255,.25);border-radius:99px;padding:2px 10px;font-size:11px;font-weight:800}
+.hb-post .vw{font-family:'Poetsen One','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,5vw,44px);line-height:1}
+.hb-post .tt{font-size:13px;font-weight:700;opacity:.95}
+.hb-tablewrap{overflow-x:auto;border-radius:14px}
+.hb table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}
+.hb th{background:var(--yel);color:#5a1a00;text-align:left;padding:8px 10px;font-weight:800;white-space:nowrap}
+.hb td{padding:8px 10px;border-bottom:1px solid #f0e6dc;font-variant-numeric:tabular-nums}
+.hb td.n,.hb th.n{text-align:right}
+.hb .pill{display:inline-block;border-radius:99px;padding:1px 9px;font-size:11px;font-weight:800;color:#fff}
+.hb-foot{background:linear-gradient(#cfeef0,#f4e4c4 60%,#e9cf9e);padding:40px 0 26px;text-align:center;position:relative;overflow:hidden}
+.hb-foot .ics{display:flex;justify-content:center;margin:12px 0}
+.hb-foot details{max-width:760px;margin:18px auto 0;background:#fff;border-radius:18px;padding:12px 18px;font-size:13px;text-align:left}
+.hb-foot summary{cursor:pointer;font-weight:800;color:var(--red)}
+.hb-foot li{margin:6px 0}
+.hb-copy{font-size:12px;color:#6b4a3a;margin-top:16px}
+@media (prefers-reduced-motion:no-preference){.hb-heroimg{animation:hbfloat 6s ease-in-out infinite}@keyframes hbfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="hb-logo" viewBox="0 0 109 41"><path fill="currentColor" d="M12.7189 5.58588C14.6392 2.59628 17.8279 -0.439794 21.6252 0.0526733C23.2398 0.248997 24.6817 1.40113 24.9035 3.01849C25.1982 5.77438 21.9334 9.82411 13.9191 10.0908C13.8992 10.1325 11.7511 14.6311 10.7736 17.205C15.2877 12.706 17.9633 11.1073 20.4621 10.7011C21.8147 10.4801 23.908 11.1269 23.9865 12.83C24.0946 13.7046 23.4974 14.9911 23.0402 16.0136C22.1019 18.0749 20.9414 20.3215 19.9972 22.3183C19.4264 23.618 18.3718 25.591 18.8371 25.8495C19.0401 25.9463 19.5516 25.744 20.2033 25.3163C20.9467 24.8295 21.8039 24.0679 22.6017 23.2744C23.1911 22.6877 23.7512 22.087 24.2111 21.5703C24.3194 19.9128 24.8332 18.1121 25.7746 16.3847C28.2657 11.8178 32.7994 9.47166 35.9015 11.1454C36.072 11.237 36.2319 11.3451 36.3888 11.4579C36.7545 11.7436 37.9873 12.8282 38.3957 14.6845C38.412 14.755 38.4497 14.9862 38.4767 15.1367C38.4769 15.1472 38.4815 15.1577 38.4816 15.1679C38.5601 15.6362 38.5986 16.1262 38.5959 16.6347C39.8699 16.4437 40.757 15.1494 41.298 14.0488C43.8323 7.72237 46.4965 1.78924 48.9875 0.739197C51.365 -0.264447 53.3861 0.77426 51.8117 2.97552C50.4865 4.82708 49.0334 6.85879 47.508 9.49603C45.0653 13.7233 43.4566 17.4236 43.0724 20.9081C42.9074 22.4096 42.2988 26.1237 44.8927 24.8642C45.4253 24.5844 45.9422 24.1671 46.4318 23.6933C46.4237 23.508 46.4213 23.3169 46.424 23.1181C46.4429 22.5423 46.5124 22.0036 46.6369 21.4521C47.1104 18.4753 52.326 7.06838 54.4113 11.5165C54.8167 12.6441 54.2815 13.7097 53.7892 14.7538C52.5989 17.1947 51.1521 19.4906 50.2922 22.4316C49.7538 24.2723 49.9693 25.3006 50.4914 25.4355C51.3922 25.6693 53.4773 23.3676 54.7082 21.9199C55.6439 17.0655 59.4472 10.6722 63.3693 10.874C65.0949 10.9629 66.3693 11.6866 67.2052 12.8788C68.5304 8.79369 70.2337 5.20618 71.6593 2.77338C73.0441 0.410912 75.3846 0.200459 76.3342 0.466736C77.5345 0.803467 77.1123 2.13266 76.258 3.28998C71.0676 10.1974 68.9473 15.7979 68.2033 19.829C68.1735 20.0281 68.1376 20.2275 68.0998 20.4296C67.9618 21.3123 67.8885 22.1143 67.8615 22.83C67.7614 25.696 69.2499 25.4724 70.548 24.4765C70.4804 23.955 70.4886 23.3925 70.5832 22.8007C71.3677 17.8922 76.2637 10.0713 80.5724 10.2919C82.2895 10.3809 83.4988 11.1048 84.2238 12.2968C84.2724 12.181 84.3211 12.063 84.3693 11.9472C85.1619 10.1363 86.3848 10.2141 87.2424 10.3837C88.04 10.5399 88.0641 11.4578 87.4933 12.2597C86.0331 14.9477 85.1301 17.2916 84.589 19.2617C84.538 19.466 84.4854 19.673 84.4259 19.8828C84.2127 20.7545 84.0699 21.5463 83.9806 22.2538C83.583 25.4264 85.4703 24.8163 86.9523 23.5624L87.8967 22.6874C88.6947 18.293 91.9808 10.8092 95.0617 10.8681C95.9382 10.9137 96.7628 11.3798 96.8146 12.249C96.9332 13.7828 94.4242 15.7904 93.4152 17.7763C92.4007 19.5525 91.3974 21.9202 91.3703 23.9306C91.4676 25.2944 92.3294 25.8786 92.8029 26.0214C94.826 26.6324 98.0157 22.399 99.298 18.4296C100.442 14.8884 101.045 11.7055 101.383 11.4306C102.611 10.4702 105.102 10.8307 104.664 12.7197C103.856 16.2017 102.706 19.5632 101.618 22.3408L101.646 22.33C100.29 25.9789 98.7059 29.141 98.0431 30.2656C98.9248 30.473 99.9465 30.7019 100.593 30.9492L100.623 30.9628C103.693 32.0202 106.565 33.4627 107.937 35.7714L107.932 35.7685C108.987 37.5419 106.631 39.3905 105.029 38.2792C104.269 37.7625 103.466 36.8447 102.627 35.7363C100.022 32.5419 98.1101 32.2867 97.0392 31.9853C96.8468 32.341 95.8463 33.9392 95.4758 34.5068C93.5554 37.4967 90.3664 40.5311 86.5666 40.039C84.9516 39.8427 83.5102 38.6914 83.2883 37.0742C82.9934 34.3183 86.2581 30.2682 94.2726 30.0019C94.2726 30.0019 94.775 28.9873 95.3918 27.6445C94.4778 28.1855 93.0029 28.6047 90.7121 28.1796C89.8443 28.0179 88.9114 27.305 88.3488 26.3847C88.0675 25.9411 87.8944 25.4402 87.8078 24.9208L87.0558 25.6689C81.7845 31.0887 80.8538 27.499 80.9728 24.5038C77.1858 29.3343 72.8307 28.9897 71.1808 26.3173C66.453 31.6295 65.2084 28.0615 65.0568 25.08C60.9809 30.9568 55.3744 29.1727 54.59 24.8593C54.3168 25.2094 54.0515 25.5211 53.8107 25.7607C50.673 28.9899 47.7646 29.0306 46.7775 25.9062C45.682 27.1063 44.4195 28.1532 43.0158 28.581C38.3853 29.4045 38.5199 22.9297 39.9103 17.9111C39.3829 18.2661 38.8793 18.4896 38.4006 18.6132C38.1625 19.8726 37.7003 21.1782 37.0109 22.4453C34.5197 27.0121 29.9865 29.3583 26.884 27.6845C25.507 26.9417 24.6438 25.5292 24.3273 23.791C22.48 26.0622 19.6184 28.8902 17.2248 27.9755C15.2261 27.1736 14.4663 25.9651 15.0099 22.9296C15.4505 20.4702 16.8973 17.6225 18.2062 15.7763C18.9093 14.7221 19.2342 14.0226 19.2101 13.6484C19.0695 11.4714 12.9996 18.1182 10.008 25.8417C9.06393 28.2766 7.72571 28.2773 6.71404 28.2773C1.00704 28.2773 8.58728 12.4765 10.1515 9.82709C9.26965 9.61995 8.2469 9.39082 7.60075 9.14349L7.57146 9.12982C4.50692 8.07482 1.63412 6.63272 0.262863 4.32416C-0.792143 2.55074 1.5637 0.703973 3.16521 1.81244C3.92499 2.32914 4.72893 3.24665 5.56755 4.35541C8.17195 7.54993 10.0845 7.80592 11.1554 8.10736C11.3476 7.75212 12.3482 6.15369 12.7189 5.58588ZM93.2199 31.8398C92.1269 31.875 87.6317 32.3132 86.4904 35.3622C86.3037 35.8627 86.2851 36.5358 86.7531 36.872C88.3217 37.7358 90.4585 35.8004 91.4269 34.6376C91.8247 34.145 92.6413 32.7843 93.2228 31.8427L93.2199 31.8398ZM63.507 13.4355C61.492 13.3204 58.7363 17.9863 58.3927 21.9501C58.0952 25.3784 59.3392 28.8227 63.3176 23.0214C63.3176 23.0214 64.3514 21.4794 64.7951 19.789C65.4683 15.3543 64.6807 13.5 63.507 13.4355ZM33.5617 13.2656C31.9903 12.728 29.7478 15.0908 28.5549 18.5429C27.3596 21.9956 27.6661 25.2302 29.2375 25.7685C30.8088 26.3064 33.0508 23.9436 34.2433 20.4911C34.6112 19.4312 34.8357 18.3899 34.925 17.4423C35.2789 15.5534 34.7227 14.4581 34.4035 13.9765C34.4035 13.9765 34.4006 13.9733 34.4006 13.9706C34.3871 13.9492 34.3737 13.9302 34.3576 13.9091C34.3008 13.8284 34.2548 13.7689 34.2277 13.7314C34.041 13.5107 33.8187 13.3517 33.5617 13.2656ZM80.9377 12.8593C78.755 12.7438 75.3278 17.41 74.5949 21.374C73.9619 24.8023 75.0029 28.2472 79.8634 22.4453C79.8634 22.4453 81.1291 20.9028 81.7648 19.2128C82.9005 14.7787 82.2112 12.9242 80.9377 12.8593ZM106.942 8.43256H106.446V9.83978H106.103V8.43256H105.609V8.15326H106.942V8.43256ZM107.57 8.15326L108.086 9.24506L108.605 8.15326H109V9.83978H108.689V8.6181L108.199 9.66791H107.973L107.488 8.6181V9.83978H107.174V8.15326H107.57ZM55.0138 4.69427C55.8227 4.51419 56.8999 4.96661 57.3107 5.62592C58.0167 6.79921 56.7236 8.02656 55.8849 8.72064C54.9895 9.43399 54.0487 9.56272 53.6916 8.26849L53.6838 8.24213C53.3321 6.95597 53.5399 5.02818 55.0138 4.69427ZM21.4416 3.2226C19.8731 2.35902 17.7366 4.29347 16.7707 5.45599C16.373 5.94835 15.556 7.31105 14.9748 8.25287V8.25482C16.0678 8.21958 20.5631 7.78091 21.7043 4.73236C21.8908 4.23192 21.9095 3.55914 21.4416 3.2226Z"/></symbol></svg>
+<div class="hb">
+<header class="hb-hero">
+<div class="hb-mark" aria-hidden="true">holiday</div>
+<nav class="hb-nav"><svg width="109" height="41" viewBox="0 0 109 41" style="color:#F8F7F4" role="img" aria-label="Holiday"><use href="#hb-logo"/></svg><div class="links"><a href="#headline">Headline</a><a href="#channels">Channels</a><a href="#paid">Paid</a><a href="#web">Web</a></div><div class="ics"><a class="hb-ic" href="https://www.facebook.com/share/1Q8q2gLKAk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Holiday on Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="#ED1D24" d="M14 8V6.5c0-.7.2-1 1.1-1H17V2h-2.7C11.4 2 10 3.700 10 6.200V8H8v3.500h2V22h4V11.500h2.700L17 8z"/></svg></a><a class="hb-ic" href="https://www.instagram.com/holidaybev_sa?lqvp=MWV0eWs5cG5kb2hocg==" target="_blank" rel="noopener noreferrer" aria-label="Holiday on Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ED1D24" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="#ED1D24"/></svg></a></div></nav>
+<div class="hb-stage"><img class="hb-heroimg" src="images/hero.webp" alt="Holiday Cranberry Cosmo, Peach Martini and Watermelon Cooler cans splashing with fruit and ice" onerror="this.style.display='none'"></div>
+<h1 id="title">Social media presence</h1>
+<p class="hb-lede hb-lead">Built on a very small launch. The results came from strong creative, sharp strategy and targeting with Mia, and a great team.</p>
+<p class="hb-lede" id="lede"><span data-draw="hero_line">—</span></p>
+</header>
+<div class="hb-ticker" aria-hidden="true"><div class="hb-tk"><span>Its time for a holiday • small launch • big creative • smart targeting • Mia + our team • Its time for a holiday • small launch • big creative • smart targeting • Mia + our team • Its time for a holiday • small launch • big creative • smart targeting • Mia + our team • </span><span>Its time for a holiday • small launch • big creative • smart targeting • Mia + our team • Its time for a holiday • small launch • big creative • smart targeting • Mia + our team • Its time for a holiday • small launch • big creative • smart targeting • Mia + our team • </span></div></div>
+
+<section class="hb-sec hb-cream" id="headline"><div class="hb-wrap">
+<h2>The headline numbers</h2>
+<p class="hb-sub">Organic reach, paid delivery and website visits at a glance. Each tile states its window.</p>
+<div class="hb-tilerow"><div class="hb-tile hb-berry"><span class="hb-tl">Social audience</span><b class="hb-big" data-draw="t0" data-source="derived" data-field="audience" data-fmt="int">—</b><span class="hb-ts">Facebook fans + Instagram followers</span></div>
+<div class="hb-tile hb-orange"><span class="hb-tl">Instagram reach</span><b class="hb-big" data-draw="t1" data-source="kpis" data-where="key=ig_reach" data-fmt="int">—</b><span class="hb-ts">Accounts reached, 1 Jan – 23 Nov</span></div>
+<div class="hb-tile hb-red"><span class="hb-tl">Instagram views</span><b class="hb-big" data-draw="t2" data-source="kpis" data-where="key=ig_views" data-fmt="int">—</b><span class="hb-ts">All content, 1 Jan – 23 Nov</span></div>
+<div class="hb-tile hb-teal"><span class="hb-tl">Best Facebook post</span><b class="hb-big" data-draw="t3" data-source="kpis" data-where="key=fb_best_views" data-fmt="int">—</b><span class="hb-ts">Views on the 19 May Fieldbar giveaway</span></div>
+<div class="hb-tile hb-green"><span class="hb-tl">Conversations started</span><b class="hb-big" data-draw="t4" data-source="kpis" data-where="key=meta_convos" data-fmt="int">—</b><span class="hb-ts">Messages begun from Meta ads</span></div>
+<div class="hb-tile hb-berry"><span class="hb-tl">Paid impressions</span><b class="hb-big" data-draw="t5" data-source="derived" data-field="paid_impr" data-fmt="int">—</b><span class="hb-ts">Meta + TikTok ads</span></div>
+<div class="hb-tile hb-orange"><span class="hb-tl">Link clicks</span><b class="hb-big" data-draw="t6" data-source="kpis" data-where="key=meta_link_clicks" data-fmt="int">—</b><span class="hb-ts">Meta Ads</span></div>
+<div class="hb-tile hb-red"><span class="hb-tl">Website sessions</span><b class="hb-big" data-draw="t7" data-source="kpis" data-where="key=web_sessions" data-fmt="int">—</b><span class="hb-ts">GA4, 1 Jan – 21 Nov</span></div>
+</div><div class="hb-band hb-band-red"><b>A small launch. Big numbers.</b><span>Not a big budget, a better idea, aimed at the right people.</span></div></div>
+<svg class="hb-palm l" viewBox="0 0 200 320" aria-hidden="true"><path d="M100 320C95 240 105 160 110 90" stroke="#7a4a2a" stroke-width="10" fill="none" stroke-linecap="round"/><g fill="#1f9d55"><path d="M110 90C60 40 20 60 0 100 40 70 70 75 110 90Z"/><path d="M110 90C150 30 190 40 200 80 170 60 140 65 110 90Z"/><path d="M110 90C90 20 50 0 20 10 60 20 85 50 110 90Z"/><path d="M110 90C130 15 170 0 195 12 155 25 130 55 110 90Z"/><path d="M110 90C80 80 40 110 30 150 60 120 85 105 110 90Z"/><path d="M110 90C140 85 180 110 190 150 160 120 135 105 110 90Z"/></g></svg><svg class="hb-palm r" viewBox="0 0 200 320" aria-hidden="true"><path d="M100 320C95 240 105 160 110 90" stroke="#7a4a2a" stroke-width="10" fill="none" stroke-linecap="round"/><g fill="#1f9d55"><path d="M110 90C60 40 20 60 0 100 40 70 70 75 110 90Z"/><path d="M110 90C150 30 190 40 200 80 170 60 140 65 110 90Z"/><path d="M110 90C90 20 50 0 20 10 60 20 85 50 110 90Z"/><path d="M110 90C130 15 170 0 195 12 155 25 130 55 110 90Z"/><path d="M110 90C80 80 40 110 30 150 60 120 85 105 110 90Z"/><path d="M110 90C140 85 180 110 190 150 160 120 135 105 110 90Z"/></g></svg>
+</section>
+<div class="hb-wave" style="--a:#F8F7F4" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#cfeef0"/></svg></div>
+<section class="hb-sec hb-sand" id="channels"><div class="hb-wrap">
+<div class="hb-cans"><img class="hb-can" src="images/can-cosmo.webp" alt="Holiday Cranberry Cosmo can" width="130" height="318" onerror="this.style.display='none'"><img class="hb-can" src="images/can-peach.webp" alt="Holiday Peach Martini can" width="130" height="318" onerror="this.style.display='none'"><img class="hb-can" src="images/can-watermelon.webp" alt="Holiday Watermelon Cooler can" width="130" height="318" onerror="this.style.display='none'"></div>
+<h2>Channel by channel</h2>
+<p class="hb-sub">Three flavours, five places to find them. Here is what each channel has delivered.</p>
+<div class="hb-cardrow"><section class="hb-card hb-top-orange"><h3>Facebook</h3><div class="hb-stats"><div class="hb-stat"><span>Page fans</span><b data-draw="c8" data-source="kpis" data-where="key=fb_fans" data-fmt="int">—</b></div><div class="hb-stat"><span>Posts analysed</span><b data-draw="c9" data-source="kpis" data-where="key=fb_posts" data-fmt="int">—</b></div><div class="hb-stat"><span>Avg views / post</span><b data-draw="c10" data-source="kpis" data-where="key=fb_avg_views" data-fmt="int">—</b></div><div class="hb-stat"><span>Typical post views</span><b data-draw="c11" data-source="kpis" data-where="key=fb_typical_views" data-fmt="int">—</b></div></div><p class="hb-note">Posts 9 Feb – 28 Jul 2026; fans as at 23 Nov.</p></section>
+<section class="hb-card hb-top-berry"><h3>Instagram</h3><div class="hb-stats"><div class="hb-stat"><span>Followers</span><b data-draw="c12" data-source="kpis" data-where="key=ig_followers" data-fmt="int">—</b></div><div class="hb-stat"><span>Posts analysed</span><b data-draw="c13" data-source="kpis" data-where="key=ig_posts" data-fmt="int">—</b></div><div class="hb-stat"><span>Avg views / post</span><b data-draw="c14" data-source="kpis" data-where="key=ig_avg_views" data-fmt="int">—</b></div><div class="hb-stat"><span>Shares</span><b data-draw="c15" data-source="kpis" data-where="key=ig_shares" data-fmt="int">—</b></div></div><p class="hb-note">Posts 9 Feb – 28 Jul 2026; shares and reach 1 Jan – 23 Nov.</p></section>
+<section class="hb-card hb-top-red"><h3>Meta Ads</h3><div class="hb-stats"><div class="hb-stat"><span>Impressions</span><b data-draw="x1" data-source="kpis" data-where="key=meta_impr" data-fmt="int">—</b></div><div class="hb-stat"><span>Link clicks</span><b data-draw="x2" data-source="kpis" data-where="key=meta_link_clicks" data-fmt="int">—</b></div><div class="hb-stat"><span>Clicks (all types)</span><b data-draw="x3" data-source="kpis" data-where="key=meta_clicks_all" data-fmt="int">—</b></div><div class="hb-stat"><span>Landing page views</span><b data-draw="c18" data-source="kpis" data-where="key=meta_lpv" data-fmt="int">—</b></div><div class="hb-stat"><span>Conversations started</span><b data-draw="c20" data-source="kpis" data-where="key=meta_convos" data-fmt="int">—</b></div></div><p class="hb-note">Campaigns ran in February and May–June 2026.</p></section>
+<section class="hb-card hb-top-char"><h3>TikTok Ads</h3><div class="hb-stats"><div class="hb-stat"><span>Impressions</span><b data-draw="c22" data-source="kpis" data-where="key=tt_impr" data-fmt="int">—</b></div><div class="hb-stat"><span>Days with delivery</span><b data-draw="x4" data-source="kpis" data-where="key=tt_days" data-fmt="int">—</b></div></div><p class="hb-note">One engagement campaign, active 20–27 May. Mia’s TikTok sync last ran 5 Nov, and the objective records no clicks.</p></section>
+<section class="hb-card hb-top-green"><h3>Website</h3><div class="hb-stats"><div class="hb-stat"><span>Sessions</span><b data-draw="c23" data-source="kpis" data-where="key=web_sessions" data-fmt="int">—</b></div><div class="hb-stat"><span>New users</span><b data-draw="c24" data-source="kpis" data-where="key=web_users" data-fmt="int">—</b></div><div class="hb-stat"><span>Page views</span><b data-draw="c25" data-source="kpis" data-where="key=web_pv" data-fmt="int">—</b></div><div class="hb-stat"><span>Bounce rate</span><b data-draw="c26" data-source="kpis" data-where="key=web_bounce" data-fmt="pct">—</b></div><div class="hb-stat"><span>Avg engaged time / session</span><b data-draw="c27" data-source="derived" data-field="secs_per_session" data-fmt="secs">—</b></div></div><p class="hb-note">GA4, 1 Jan – 21 Nov 2026.</p></section>
+</div></div></section>
+<div class="hb-wave" style="--a:#F4E4C4" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#FFD32B"/></svg></div>
+<section class="hb-sec hb-yellow" id="attention"><div class="hb-wrap">
+<h2>What earns attention</h2>
+<p class="hb-sub">Competition giveaways are the only posts that break out. Everything else sits near the account’s typical reach.</p>
+<div class="hb-grid2"><div class="hb-lift hb-top-orange"><span class="hb-tl">Facebook giveaway post vs a typical post</span><b class="hb-big" data-draw="l_fb_lift" data-source="derived" data-field="fb_lift" data-fmt="mult">—</b><span class="hb-ts">Best post <span class="hb-inl"><b data-draw="l_fb_best_views" data-source="kpis" data-where="key=fb_best_views" data-fmt="int">—</b></span> views · typical <span class="hb-inl"><b data-draw="l_fb_typical_views" data-source="kpis" data-where="key=fb_typical_views" data-fmt="int">—</b></span></span></div>
+<div class="hb-lift hb-top-berry"><span class="hb-tl">Instagram giveaway post vs a typical post</span><b class="hb-big" data-draw="l_ig_lift" data-source="derived" data-field="ig_lift" data-fmt="mult">—</b><span class="hb-ts">Best post <span class="hb-inl"><b data-draw="l_ig_best_views" data-source="kpis" data-where="key=ig_best_views" data-fmt="int">—</b></span> views · typical <span class="hb-inl"><b data-draw="l_ig_typical_views" data-source="kpis" data-where="key=ig_typical_views" data-fmt="int">—</b></span></span></div>
+</div>
+<div style="margin-top:16px">
+<section class="hb-panel"><h3>Top posts by views</h3><p>Facebook and Instagram, best ten. Hover or tap a bar for the detail.</p>
+<div class="hb-legend"><span><i style="background:#F58236"></i>Facebook</span><span><i style="background:#AE4268"></i>Instagram</span></div>
+<div class="hb-chart" data-draw="chart_posts">—</div></section>
+</div></div></section>
+<div class="hb-wave" style="--a:#FFD32B" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#F8F7F4"/></svg></div>
+<section class="hb-quote hb-cream"><h2>Holiday brings sunshine, flavour and friends together</h2></section>
+<div class="hb-cream"><div class="hb-photos" aria-hidden="true">
+<div class="hb-ph"><img src="images/photo-sunshine.webp" alt="" onerror="this.style.display='none'"><b>Sunshine</b><small>Soak it up</small></div><div class="hb-ph"><img src="images/photo-friends.webp" alt="" onerror="this.style.display='none'"><b>Friends</b><small>Better together</small></div><div class="hb-ph"><img src="images/photo-flavour.webp" alt="" onerror="this.style.display='none'"><b>Flavour</b><small>Pick your premium</small></div><div class="hb-ph"><img src="images/photo-holiday.webp" alt="" onerror="this.style.display='none'"><b>Holiday</b><small>Its time for one</small></div>
+</div></div>
+<div class="hb-wave" style="--a:#F8F7F4" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#fff"/></svg></div>
+<section class="hb-sec hb-white" id="paid"><div class="hb-wrap">
+<h2>Paid social</h2>
+<p class="hb-sub">Meta and TikTok delivery by week, and how each Meta campaign compares.</p>
+<p class="hb-callout"><span data-draw="callout_ctr">—</span></p>
+<div class="hb-grid2">
+<section class="hb-panel" style="background:var(--cream)"><h3>Impressions by week</h3><p>Weeks with no paid activity are left out. The February burst was the first competition push.</p>
+<div class="hb-legend"><span><i style="background:#ED1D24"></i>Meta Ads</span><span><i style="background:#373E48"></i>TikTok Ads</span></div>
+<div class="hb-chart" data-draw="chart_weekly">—</div></section>
+<section class="hb-panel" style="background:var(--cream)"><h3>Landing page views by campaign</h3><p>People who loaded the landing page after an ad click, most first.</p>
+<div class="hb-chart" data-draw="chart_campaigns">—</div></section>
+<section class="hb-panel" style="background:var(--cream);grid-column:1/-1"><h3>Click-through rate by campaign</h3><p>Share of impressions that became a click of any type, highest first.</p><div class="hb-chart" data-draw="chart_ctr">—</div></section>
+</div>
+<section class="hb-panel" style="margin-top:16px;background:var(--cream)"><h3>Meta campaign detail</h3>
+<div class="hb-tablewrap"><table><thead><tr><th>Campaign</th><th class="n">Impressions</th><th class="n">Reach</th><th class="n">Link clicks</th><th class="n">Landing page views</th><th class="n">CTR (all clicks)</th><th class="n">Frequency</th></tr></thead><tbody data-draw="camp_tbody"></tbody></table></div></section>
+</div></section>
+<div class="hb-wave" style="--a:#fff" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#F8F7F4"/></svg></div>
+<section class="hb-sec hb-cream" id="web"><div class="hb-wrap">
+<h2>Website traffic</h2>
+<p class="hb-sub">Where visitors come from and where they are.</p>
+<div class="hb-grid2">
+<section class="hb-panel"><h3>Sessions by source</h3><p>Paid social is the largest single source.</p><div class="hb-chart" data-draw="chart_traffic">—</div></section>
+<section class="hb-panel"><h3>Top cities</h3><p>Cape Town leads, with Gqeberha and Pretoria next.</p><div class="hb-chart" data-draw="chart_cities">—</div></section>
+</div>
+</div></section>
+<div class="hb-wave" style="--a:#F8F7F4" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#FFD32B"/></svg></div>
+<section class="hb-sec hb-yellow" id="posts"><div class="hb-wrap">
+<h2>Follow the sunshine with Holiday</h2>
+<p class="hb-sub">The posts that travelled furthest, then every top post ranked by views.</p>
+<div class="hb-feed" data-draw="feed">—</div>
+<details class="hb-dd"><summary>Post leaderboard: every top post, ranked by views</summary><section class="hb-panel"><div class="hb-tablewrap"><table><thead><tr><th>Date</th><th>Channel</th><th>Post</th><th class="n">Views</th><th class="n">Engagement</th><th class="n">Shares</th><th class="n">Comments</th><th class="n">Eng. rate</th></tr></thead><tbody data-draw="posts_tbody"></tbody></table></div></section></details>
+</div></section>
+<div class="hb-wave" style="--a:#FFD32B" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 70Q720 -30 1440 70Z" fill="#cfeef0"/></svg></div>
+<footer class="hb-foot"><div class="hb-wrap">
+<div class="hb-band hb-band-pink"><b>We didn’t outspend. We out-thought.</b><span>Creative, strategy and targeting, powered by Mia and our team.</span></div>
+<div class="hb-cans" style="margin-bottom:10px"><img class="hb-can" src="images/can-cosmo.webp" alt="Holiday Cranberry Cosmo can" width="130" height="318" onerror="this.style.display='none'"><img class="hb-can" src="images/can-peach.webp" alt="Holiday Peach Martini can" width="130" height="318" onerror="this.style.display='none'"><img class="hb-can" src="images/can-watermelon.webp" alt="Holiday Watermelon Cooler can" width="130" height="318" onerror="this.style.display='none'"></div>
+<img src="images/logo.webp" alt="Holiday Premium Beverages" width="220" style="width:220px;height:auto;max-width:70%" onerror="this.style.display='none'">
+<div class="ics"><a class="hb-ic" href="https://www.facebook.com/share/1Q8q2gLKAk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Holiday on Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="#ED1D24" d="M14 8V6.5c0-.7.2-1 1.1-1H17V2h-2.7C11.4 2 10 3.700 10 6.200V8H8v3.500h2V22h4V11.500h2.700L17 8z"/></svg></a><a class="hb-ic" href="https://www.instagram.com/holidaybev_sa?lqvp=MWV0eWs5cG5kb2hocg==" target="_blank" rel="noopener noreferrer" aria-label="Holiday on Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ED1D24" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="#ED1D24"/></svg></a></div>
+<details><summary>How to read these numbers</summary><ul>
+<li><b>Views</b> count every time a post was shown, including repeats. <b>Reach</b> counts distinct accounts.</li>
+<li><b>Engagement</b> adds reactions, comments and shares. On giveaway posts, entering means commenting and sharing, so these posts overstate organic love for the brand.</li>
+<li><b>Link clicks</b> only count clicks that leave the ad. Other ad clicks include likes and expands.</li>
+<li><b>Landing page views</b> are Meta’s count of people who loaded the page. GA4 sessions are a separate count, which is why the two can differ.</li>
+<li>TikTok figures stop where Mia’s sync stopped, and TikTok was run for engagement, so it records no clicks. Organic TikTok isn’t connected.</li>
+<li>Facebook and Instagram ‘typical’ means the median post. Website totals cover slightly different end dates (21 and 23 Nov).</li>
+</ul></details>
+<p class="hb-copy">Source: Mia (Holiday Beverages workspace), data to 23 Nov 2026. Figures are a snapshot attached to this dashboard. Enjoy responsibly. Not for sale to under 18s.</p>
+</div></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+/* ---- Data snapshot, 23 Nov 2026 (Mia) ---- */
+const DATA={
+kpis:[{"key":"fb_fans","value":1064},{"key":"fb_posts","value":28},{"key":"fb_avg_views","value":2432},{"key":"fb_typical_views","value":688},{"key":"fb_best_views","value":35670},{"key":"ig_followers","value":683},{"key":"ig_reach","value":15789},{"key":"ig_views","value":63602},{"key":"ig_shares","value":2009},{"key":"ig_posts","value":36},{"key":"ig_avg_views","value":1434},{"key":"ig_typical_views","value":540},{"key":"ig_best_views","value":17055},{"key":"days_quiet","value":118},{"key":"meta_impr","value":773130},{"key":"meta_clicks_all","value":17960},{"key":"meta_link_clicks","value":12899},{"key":"meta_lpv","value":6572},{"key":"meta_convos","value":32},{"key":"tt_impr","value":32395},{"key":"web_sessions","value":1143},{"key":"web_users","value":915},{"key":"web_pv","value":1381},{"key":"web_bounce","value":64.7},{"key":"web_engaged_secs","value":21636},{"key":"tt_days","value":8}],
+campaigns:[
+{"campaign":"Competition Campaign","impressions":106884,"reach":52599,"clicks":2334,"link_clicks":2055,"landing_page_views":847,"ctr":2.18,"frequency":2.03},
+{"campaign":"Competition Campaign – Copy","impressions":150223,"reach":98337,"clicks":6104,"link_clicks":2743,"landing_page_views":1460,"ctr":4.06,"frequency":1.53},
+{"campaign":"always_on","impressions":281114,"reach":84861,"clicks":5267,"link_clicks":4585,"landing_page_views":2327,"ctr":1.87,"frequency":3.31},
+{"campaign":"Y26_Holiday_AlwaysOn_OrganicMeta","impressions":234909,"reach":74975,"clicks":4255,"link_clicks":3516,"landing_page_views":1938,"ctr":1.81,"frequency":3.13}],
+cities:[{"city":"Cape Town","sessions":224},{"city":"Gqeberha","sessions":134},{"city":"Pretoria","sessions":106},{"city":"Johannesburg","sessions":73},{"city":"Durban","sessions":29},{"city":"Soweto","sessions":24},{"city":"Sandton","sessions":23},{"city":"Manzini (Eswatini)","sessions":22},{"city":"Benoni","sessions":20},{"city":"Vereeniging","sessions":20}],
+traffic:[{"channel":"Paid social (Meta)","sessions":472,"new_users":461},{"channel":"Direct","sessions":247,"new_users":177},{"channel":"Organic search","sessions":236,"new_users":148},{"channel":"Instagram link in bio","sessions":93,"new_users":73},{"channel":"Facebook referrals","sessions":49,"new_users":49},{"channel":"Other","sessions":18,"new_users":4}],
+weekly:[
+{"week":"2026-02-09","platform":"Meta Ads","impressions":9946,"link_clicks":109},
+{"week":"2026-02-16","platform":"Meta Ads","impressions":236350,"link_clicks":4439},
+{"week":"2026-02-23","platform":"Meta Ads","impressions":10811,"link_clicks":250},
+{"week":"2026-05-18","platform":"Meta Ads","impressions":93353,"link_clicks":1381},
+{"week":"2026-05-18","platform":"TikTok Ads","impressions":18107,"link_clicks":0},
+{"week":"2026-05-25","platform":"Meta Ads","impressions":112704,"link_clicks":2018},
+{"week":"2026-05-25","platform":"TikTok Ads","impressions":14288,"link_clicks":0},
+{"week":"2026-06-01","platform":"Meta Ads","impressions":75057,"link_clicks":1186},
+{"week":"2026-06-15","platform":"Meta Ads","impressions":23030,"link_clicks":243},
+{"week":"2026-06-22","platform":"Meta Ads","impressions":115734,"link_clicks":1726},
+{"week":"2026-06-29","platform":"Meta Ads","impressions":96145,"link_clicks":1547}],
+posts:[
+{"post_id":"fb1","platform":"Facebook","date":"2026-05-19","title":"WIN a Fieldbar cooler + 3 cases","views":35670,"engagement":3678,"shares":1771,"comments":1257,"eng_rate":10.31},
+{"post_id":"fb2","platform":"Facebook","date":"2026-06-01","title":"Everyone’s entering. Are you?","views":9917,"engagement":1271,"shares":425,"comments":515,"eng_rate":12.82},
+{"post_id":"fb3","platform":"Facebook","date":"2026-02-12","title":"WIN 3 MONTHS OF Holiday!","views":3271,"engagement":253,"shares":88,"comments":73,"eng_rate":7.73},
+{"post_id":"fb4","platform":"Facebook","date":"2026-02-23","title":"5 days to go: WIN 3 MONTHS","views":2785,"engagement":331,"shares":159,"comments":52,"eng_rate":11.89},
+{"post_id":"fb5","platform":"Facebook","date":"2026-02-13","title":"WIN 3 MONTHS OF Holiday!","views":2649,"engagement":276,"shares":140,"comments":49,"eng_rate":10.42},
+{"post_id":"fb6","platform":"Facebook","date":"2026-02-09","title":"WIN 3 MONTHS OF Holiday!","views":1687,"engagement":178,"shares":62,"comments":52,"eng_rate":10.55},
+{"post_id":"ig1","platform":"Instagram","date":"2026-05-19","title":"WIN a Fieldbar cooler + 3 cases","views":17055,"engagement":5694,"shares":1168,"comments":3903,"eng_rate":33.39},
+{"post_id":"ig2","platform":"Instagram","date":"2026-06-01","title":"Everyone’s entering. Are you?","views":7493,"engagement":3079,"shares":512,"comments":2206,"eng_rate":41.09},
+{"post_id":"ig3","platform":"Instagram","date":"2026-02-09","title":"WIN 3 MONTHS OF Holiday!","views":6224,"engagement":259,"shares":61,"comments":62,"eng_rate":4.16},
+{"post_id":"ig4","platform":"Instagram","date":"2026-02-11","title":"WIN 3 MONTHS OF Holiday!","views":1974,"engagement":466,"shares":74,"comments":219,"eng_rate":23.61},
+{"post_id":"ig5","platform":"Instagram","date":"2026-05-21","title":"Pick your premium Holiday","views":1207,"engagement":126,"shares":10,"comments":12,"eng_rate":10.44},
+{"post_id":"ig6","platform":"Instagram","date":"2026-05-28","title":"Just add ice","views":1107,"engagement":98,"shares":12,"comments":12,"eng_rate":8.85},
+{"post_id":"ig7","platform":"Instagram","date":"2026-02-23","title":"5 days to go: WIN 3 MONTHS","views":1012,"engagement":165,"shares":20,"comments":51,"eng_rate":16.3},
+{"post_id":"ig8","platform":"Instagram","date":"2026-06-21","title":"Snap a Selfie + Win","views":866,"engagement":64,"shares":20,"comments":0,"eng_rate":7.39}]
+};
+
+/* ---- Tiny stand-in for the dashboard runtime ---- */
+const dash=(()=>{const calcs={},draws=[];
+const api={
+ data(id){if(DATA[id])return{status:'ok',data:DATA[id]};const c=calcs[id];if(c){if(!c.v)c.v=c.fn(...c.inputs.map(i=>api.data(i).data));return{status:'ok',data:c.v};}return{status:'missing',data:[]};},
+ calc(id,o){calcs[id]=o;},
+ draw(n,fn){draws.push([n,fn]);},
+ run(){draws.forEach(([n,fn])=>document.querySelectorAll('[data-draw="'+n+'"]').forEach(el=>{try{fn(el);}catch(e){console.error(n,e);}}));}
+};return api;})();
+
+/* ---- Page logic ---- */
+const PLAT={'Facebook':'#F58236','Instagram':'#AE4268','Meta Ads':'#ED1D24','TikTok Ads':'#373E48'};
+const F={int:d3.format(','),pct:v=>d3.format('.1f')(v)+'%',secs:v=>d3.format('.1f')(v)+' s',mult:v=>d3.format('.1f')(v)+'×'};
+const pd=d3.utcParse('%Y-%m-%d'),fd=d3.utcFormat('%d %b'),fdy=d3.utcFormat('%d %b %Y');
+function srcs(ids){const r=ids.map(i=>dash.data(i));if(r.some(x=>x.status==='error'))return{st:'error'};if(r.some(x=>x.status!=='ok'))return{st:'wait'};return{st:'ok',d:r.map(x=>x.data)};}
+function bad(el,s){el.replaceChildren(document.createTextNode(s.st==='error'?'This part couldn’t load.':'—'));}
+function showTip(h,ev,t){let e=h.querySelector('.hb-tip');if(!e){e=document.createElement('div');e.className='hb-tip';h.appendChild(e);}e.textContent=t;e.style.display='block';const r=h.getBoundingClientRect();let x=ev.clientX-r.left+12;if(x+e.offsetWidth>r.width)x=Math.max(0,r.width-e.offsetWidth-4);e.style.left=x+'px';e.style.top=(ev.clientY-r.top+12)+'px';}
+function hideTip(h){const e=h.querySelector('.hb-tip');if(e)e.style.display='none';}
+dash.calc('derived',{inputs:['kpis','traffic','weekly'],fn:(kpis,traffic,weekly)=>{const k={};const wk={};weekly.filter(r=>String(r.week).indexOf('2026-02')===0).forEach(r=>{wk[r.week]=(wk[r.week]||0)+(+r.impressions);});const febPeak=d3.max(Object.values(wk));kpis.forEach(r=>k[r.key]=+r.value);const paid=traffic.find(r=>r.channel==='Paid social (Meta)');return[{feb_peak:febPeak,audience:k.fb_fans+k.ig_followers,paid_impr:k.meta_impr+k.tt_impr,secs_per_session:k.web_engaged_secs/k.web_sessions,fb_lift:k.fb_best_views/k.fb_typical_views,ig_lift:k.ig_best_views/k.ig_typical_views,ga_paid_share:paid?100*(+paid.sessions)/k.meta_lpv:null}];}});
+dash.calc('traffic_calc',{inputs:['traffic'],fn:(t)=>{const tot=d3.sum(t,r=>+r.sessions);return t.map(r=>({channel:r.channel,sessions:+r.sessions,new_users:+r.new_users,share:100*(+r.sessions)/tot}));}});
+const STATS=["x4","c10","c11","c12","c13","c14","c15","c18","c20","c22","c23","c24","c25","c26","c27","c8","c9","l_fb_best_views","l_fb_lift","l_fb_typical_views","l_ig_best_views","l_ig_lift","l_ig_typical_views","t0","t1","t2","t3","t4","t5","t6","t7","x1","x2","x3"];
+STATS.forEach(n=>dash.draw(n,el=>{const src=el.dataset.source,s=srcs([src]);if(s.st!=='ok'){el.textContent='—';return;}let v;if(src==='kpis'){const key=(el.dataset.where||'').split('=')[1];const r=s.d[0].find(x=>x.key===key);v=r?+r.value:NaN;}else{v=s.d[0][0]?+s.d[0][0][el.dataset.field]:NaN;}el.textContent=isNaN(v)?'—':F[el.dataset.fmt](v);}));
+dash.draw('hero_line',el=>{const s=srcs(['derived','kpis']);if(s.st!=='ok'){el.textContent='—';return;}const d=s.d[0][0];const fr=document.createDocumentFragment();const add=t=>fr.appendChild(document.createTextNode(t));const num=t=>{const b=document.createElement('b');b.textContent=t;fr.appendChild(b);};
+add('Holiday has a social audience of ');num(F.int(d.audience));add(' across Facebook and Instagram. Giveaways are its breakout moments (the best Facebook post reached ');num(F.mult(d.fb_lift));add(' a typical post), and the February competition push delivered ');num(F.int(d.feb_peak));add(' ad impressions in a single week.');el.replaceChildren(fr);});
+function wrapL(t,n){const w=String(t).split(' '),L=[];let c='';w.forEach(x=>{if(c&&(c+' '+x).length>n){L.push(c);c=x;}else c=c?c+' '+x:x;});if(c)L.push(c);return L;}
+function hbar(el,rows,o){const W=Math.max(280,el.clientWidth||600);el.replaceChildren();const L=rows.map(r=>wrapL(o.label(r),W<420?20:26));const hs=L.map(l=>Math.max(30,l.length*14+16));const tot=d3.sum(hs)+8;const svg=d3.select(el).append('svg').attr('viewBox','0 0 '+W+' '+tot).attr('role','img').attr('aria-label',o.aria);const m=svg.append('text').attr('class','hb-ax');let lw=0,vw=0;L.forEach(l=>l.forEach(s=>{m.text(s);lw=Math.max(lw,m.node().getComputedTextLength());}));rows.forEach(r=>{m.text(o.fmt(o.value(r)));vw=Math.max(vw,m.node().getComputedTextLength());});m.remove();lw=lw+14;const x=d3.scaleLinear().domain([0,d3.max(rows,o.value)||1]).range([0,Math.max(30,W-lw-vw-16)]);let y=4;
+rows.forEach((r,i)=>{const rh=hs[i],g=svg.append('g'),bw=Math.max(2,x(o.value(r)));const t=g.append('text').attr('class','hb-ax').attr('text-anchor','end');L[i].forEach((s,j)=>t.append('tspan').attr('x',lw-8).attr('y',y+rh/2-(L[i].length-1)*7+j*14).attr('dy','0.35em').text(s));g.append('rect').attr('x',lw).attr('y',y+rh/2-9).attr('class','hb-bar').attr('height',18).attr('rx',6).attr('width',bw).attr('fill',o.color(r));g.append('text').attr('class','hb-val').attr('x',lw+bw+6).attr('y',y+rh/2).attr('dy','0.35em').text(o.fmt(o.value(r)));g.append('rect').attr('width',W).attr('y',y).attr('height',rh).attr('fill','transparent').on('pointermove',ev=>showTip(el,ev,o.tip(r))).on('pointerleave',()=>hideTip(el));y+=rh;});
+if(o.anim){if(el.__io){el.__io.disconnect();el.__io=null;}const calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(!el.__played&&!calm){const bars=svg.selectAll('rect.hb-bar'),vals=svg.selectAll('text.hb-val'),bw=rows.map(r=>Math.max(2,x(o.value(r))));bars.attr('width',2);vals.attr('x',lw+8).text(o.fmt(0));const play=()=>{el.__played=true;bars.transition().duration(1400).delay((d,i)=>i*90).ease(d3.easeCubicOut).attr('width',(d,i)=>bw[i]);vals.transition().duration(1400).delay((d,i)=>i*90).ease(d3.easeCubicOut).attr('x',(d,i)=>lw+bw[i]+6).tween('text',function(d,i){const ip=d3.interpolateNumber(0,o.value(rows[i])),n=d3.select(this);return u=>n.text(o.fmt(Math.round(ip(u))));});};el.__io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){el.__io.disconnect();el.__io=null;play();}},{root:null,threshold:.25});el.__io.observe(el);}}}
+dash.draw('chart_posts',el=>{const s=srcs(['posts']);if(s.st!=='ok')return bad(el,s);const rows=s.d[0].slice().sort((a,b)=>b.views-a.views).slice(0,10);hbar(el,rows,{anim:true,aria:'Top ten Facebook and Instagram posts by views',label:r=>(r.platform==='Facebook'?'FB':'IG')+' · '+fd(pd(r.date))+' · '+r.title,value:r=>+r.views,fmt:F.int,color:r=>PLAT[r.platform],tip:r=>r.platform+' · '+fdy(pd(r.date))+' · '+r.title+': '+F.int(r.views)+' views, '+F.int(r.engagement)+' engagements, '+F.int(r.shares)+' shares'});});
+dash.draw('chart_campaigns',el=>{const s=srcs(['campaigns']);if(s.st!=='ok')return bad(el,s);const rows=s.d[0].slice().sort((a,b)=>b.landing_page_views-a.landing_page_views);hbar(el,rows,{aria:'Landing page views for each Meta campaign',label:r=>r.campaign,value:r=>+r.landing_page_views,fmt:F.int,color:()=>'#ED1D24',tip:r=>r.campaign+': '+F.int(r.landing_page_views)+' landing page views, '+F.int(r.link_clicks)+' link clicks, CTR '+r.ctr+'%'});});
+dash.draw('chart_ctr',el=>{const s=srcs(['campaigns']);if(s.st!=='ok')return bad(el,s);const rows=s.d[0].slice().sort((a,b)=>b.ctr-a.ctr);hbar(el,rows,{aria:'Click-through rate for each Meta campaign',label:r=>r.campaign,value:r=>+r.ctr,fmt:v=>d3.format('.2f')(v)+'%',color:()=>'#F58236',tip:r=>r.campaign+': '+d3.format('.2f')(r.ctr)+'% of impressions clicked ('+F.int(r.clicks)+' clicks on '+F.int(r.impressions)+' impressions)'});});
+dash.draw('callout_ctr',el=>{const s=srcs(['campaigns']);if(s.st!=='ok'){el.textContent='—';return;}const rows=s.d[0];if(!rows.length){el.textContent='—';return;}const top=rows.slice().sort((a,b)=>b.ctr-a.ctr)[0];const fr=document.createDocumentFragment();fr.appendChild(document.createTextNode('Same small spend, four campaigns, and the competition push still hit a '));const b=document.createElement('b');b.textContent=d3.format('.2f')(top.ctr)+'%';fr.appendChild(b);fr.appendChild(document.createTextNode(' click-through rate.'));el.replaceChildren(fr);});
+dash.draw('chart_traffic',el=>{const s=srcs(['traffic_calc']);if(s.st!=='ok')return bad(el,s);const rows=s.d[0].slice().sort((a,b)=>b.sessions-a.sessions);hbar(el,rows,{aria:'Website sessions by traffic source',label:r=>r.channel,value:r=>r.sessions,fmt:F.int,color:r=>r.channel.indexOf('Paid')===0?'#ED1D24':'#49AE98',tip:r=>r.channel+': '+F.int(r.sessions)+' sessions ('+d3.format('.0f')(r.share)+'% of total), '+F.int(r.new_users)+' new users'});});
+dash.draw('chart_cities',el=>{const s=srcs(['cities']);if(s.st!=='ok')return bad(el,s);hbar(el,s.d[0].slice().sort((a,b)=>b.sessions-a.sessions),{aria:'Website sessions for the ten busiest cities',label:r=>r.city,value:r=>+r.sessions,fmt:F.int,color:()=>'#007E42',tip:r=>r.city+': '+F.int(r.sessions)+' sessions'});});
+dash.draw('chart_weekly',el=>{const s=srcs(['weekly']);if(s.st!=='ok')return bad(el,s);const rows=s.d[0],keys=['Meta Ads','TikTok Ads'];const weeks=Array.from(new Set(rows.map(r=>r.week))).sort().filter(w=>d3.sum(rows.filter(r=>r.week===w),r=>+r.impressions)>0);const data=weeks.map(w=>{const o={week:w};keys.forEach(k=>{const r=rows.find(q=>q.week===w&&q.platform===k);o[k]=r?+r.impressions:0;});o.total=o['Meta Ads']+o['TikTok Ads'];return o;});const W=Math.max(300,el.clientWidth||600),H=250,mB=30,mT=22;el.replaceChildren();const svg=d3.select(el).append('svg').attr('viewBox','0 0 '+W+' '+H).attr('role','img').attr('aria-label','Paid impressions by week, Meta and TikTok');const x=d3.scaleBand().domain(weeks).range([4,W-4]).padding(.22),y=d3.scaleLinear().domain([0,d3.max(data,d=>d.total)||1]).range([H-mB,mT]);const step=x.bandwidth()<44?2:1;
+data.forEach((d,i)=>{let acc=0;keys.forEach(k=>{if(!d[k])return;const y0=y(acc),y1=y(acc+d[k]);svg.append('rect').attr('x',x(d.week)).attr('y',y1).attr('width',x.bandwidth()).attr('height',y0-y1).attr('fill',PLAT[k]).on('pointermove',ev=>{const rs=rows.filter(q=>q.week===d.week);showTip(el,ev,'Week of '+fdy(pd(d.week))+' · '+k+': '+F.int(d[k])+' impressions. All paid: '+F.int(d3.sum(rs,q=>+q.link_clicks))+' link clicks');}).on('pointerleave',()=>hideTip(el));acc+=d[k];});svg.append('text').attr('class','hb-val').attr('x',x(d.week)+x.bandwidth()/2).attr('y',y(d.total)-5).attr('text-anchor','middle').text(d3.format('.2s')(d.total));if(i%step===0)svg.append('text').attr('class','hb-ax').attr('x',x(d.week)+x.bandwidth()/2).attr('y',H-10).attr('text-anchor','middle').text(fd(pd(d.week)));});
+svg.append('line').attr('x1',4).attr('x2',W-4).attr('y1',H-mB).attr('y2',H-mB).attr('stroke','#e6d8cb');});
+dash.draw('posts_tbody',tb=>{const s=srcs(['posts']);if(s.st!=='ok'){tb.replaceChildren();return;}const fr=document.createDocumentFragment();s.d[0].slice().sort((a,b)=>b.views-a.views).forEach(r=>{const tr=document.createElement('tr');const cell=(t,n)=>{const td=document.createElement('td');if(n)td.className='n';td.textContent=t;tr.appendChild(td);return td;};cell(fdy(pd(r.date)));const c=cell('');const pill=document.createElement('span');pill.className='pill';pill.style.background=PLAT[r.platform];pill.textContent=r.platform;c.appendChild(pill);cell(r.title);cell(F.int(r.views),1);cell(F.int(r.engagement),1);cell(F.int(r.shares),1);cell(F.int(r.comments),1);cell(r.eng_rate==null?'—':d3.format('.1f')(r.eng_rate)+'%',1);fr.appendChild(tr);});tb.replaceChildren(fr);});
+dash.draw('camp_tbody',tb=>{const s=srcs(['campaigns']);if(s.st!=='ok'){tb.replaceChildren();return;}const fr=document.createDocumentFragment();s.d[0].forEach(r=>{const tr=document.createElement('tr');const cell=(t,n)=>{const td=document.createElement('td');if(n)td.className='n';td.textContent=t;tr.appendChild(td);};cell(r.campaign);cell(F.int(r.impressions),1);cell(F.int(r.reach),1);cell(F.int(r.link_clicks),1);cell(F.int(r.landing_page_views),1);cell(d3.format('.2f')(r.ctr)+'%',1);cell(d3.format('.2f')(r.frequency),1);fr.appendChild(tr);});tb.replaceChildren(fr);});
+const IM=['images/photo-sunshine.webp','images/photo-friends.webp','images/photo-flavour.webp','images/photo-holiday.webp'];
+dash.draw('feed',el=>{const s=srcs(['posts']);if(s.st!=='ok')return bad(el,s);const G={Facebook:'linear-gradient(150deg,#FFB347,#ED1D24)',Instagram:'linear-gradient(150deg,#d6397a,#7d0f3a)'};const fr=document.createDocumentFragment();s.d[0].slice().sort((a,b)=>b.views-a.views).slice(0,4).forEach((r,ix)=>{const d=document.createElement('div');d.className='hb-post';d.style.background=G[r.platform];d.tabIndex=0;const im=document.createElement('img');im.className='bg';im.alt='';im.src=IM[ix%IM.length];im.onerror=()=>{im.style.display='none';};d.appendChild(im);const pl=document.createElement('span');pl.className='pl';pl.textContent=r.platform+' · '+fd(pd(r.date));d.appendChild(pl);const mid=document.createElement('div');const v=document.createElement('div');v.className='vw';v.textContent=F.int(r.views);mid.appendChild(v);const l=document.createElement('div');l.className='tt';l.textContent='views';mid.appendChild(l);d.appendChild(mid);const t=document.createElement('div');t.className='tt';t.textContent=r.title;d.appendChild(t);fr.appendChild(d);});el.replaceChildren(fr);});
+
+/* ---- Run ---- */
+function go(){dash.run();}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+(function(){let w=window.innerWidth,t;window.addEventListener('resize',()=>{if(window.innerWidth===w)return;w=window.innerWidth;clearTimeout(t);t=setTimeout(go,150);});})();
+</script>
+</body>
+</html>
